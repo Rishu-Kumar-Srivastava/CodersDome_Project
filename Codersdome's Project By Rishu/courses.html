@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>CodersDome-Courses</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <style>
+        .course-card {
+            padding: 20px;
+            border-radius: 80px;
+            margin-bottom: 20px;
+            position: relative;
+            background-color: #c2cbff;
+        }
+
+        .course-card h2 {
+            margin-top: 0;
+        }
+
+        .sub-courses {
+            list-style-type: circle;
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+        }
+
+        .sub-courses li {
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        }
+
+        .course-card:hover .sub-courses li {
+            max-height: 100px;
+            /* Adjust this value based on the height of your sub-courses */
+            opacity: 1;
+            transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+        }
+
+        .course-card:hover .sub-courses li:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .course-card:hover .sub-courses li:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .course-card:hover .sub-courses li:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .course-card:hover .sub-courses li:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        .course-card:hover .sub-courses li:nth-child(5) {
+            transition-delay: 0.5s;
+        }
+    </style>
+
+
+
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="header_top">
+                <div class="container-fluid">
+                    <div class="contact_nav">
+                        <a href="" id="top_call">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>
+                                Call : +91 9561618368
+                            </span>
+                        </a>
+                        <a href="" id="top_mail">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>
+                                Email : codersdome@gmail.com
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container ">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.jpeg" alt="Company Logo" class="logo">
+                            <span>
+                                CODERSDOME PVT LTD.
+                            </span>
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""> </span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html"> About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="courses.html">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blogs.html">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- end header section -->
+
+
+        <!--  course section -->
+
+        <section class="client_section ">
+            <div class="container">
+                <div class="heading_container heading_center">
+                    <h2>
+                        Career Oriented Courses
+                    </h2>
+                    <br>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Cutting-edge curriculum designed by
+                        industry experts to develop job-ready skills</p>
+                </div>
+                <div class="carousel-wrap layout_padding2-top ">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/java.png" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>Java FullStack Web Development</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Fullstack web development with Java, React/Angular, MySQL, Mongo DB, Docker,
+                                        Kubernets and Cloud.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/net.jpeg" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>C#.Net core Fullstack development</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Fullstack web development with C#.Net core, React/Angular, SQL Server, Mongo DB,
+                                        Docker, Kubernets and Cloud.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/front.jpg" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>Frontend development</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Learn front end development with HTML, CSS, JavaScript and React/Angular.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/DSA.jpg" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>Data Structure</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Learn basic to advanced data structures with C++/Java/C#.Net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/design.jpg" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>OOP and Design patterns</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Learn basic to advanced OOP concepts and Design patterns with C++/Java/C#.Net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/thread.png" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>Multi Threading</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Learn basic to advanced multi threading concepts with examples using Java/C#.Net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/c++.png" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>Introduction to programming using C++/Java/C#.Net</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Learn basics to advance programming concepts with examples using C++/Java/C#.Net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/opp.png" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>Object Oriented programming using C++/Java/C#.Net</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Learn basics to advance object oriented concepts with examples using
+                                        C++/Java/C#.Net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <div class="client_id">
+                                    <div class="img-box">
+                                        <img src="images/web.png" alt="">
+                                    </div>
+                                    <div class="client_detail">
+                                        <div class="client_info">
+                                            <h6>
+                                                <b>Web development using HTML, CSS and JavaScript</b>
+                                            </h6>
+
+                                        </div>
+                                        <i class="fas fa-book" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="client_text">
+                                    <p>
+                                        Learn Website development using HTML, CSS and JavaScript
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end course section -->
+        <br><br><br><br>
+        <div class="heading_container heading_center">
+            <h2>
+                Different Courses With Full Details
+            </h2>
+            <br>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Just Check it Out !!!</p>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 course-card">
+                        <div class="card-body">
+                            <h2 class="card-title">COP, DS, OOP and Design patterns</h2>
+                            <ul class="sub-courses">
+                                <li class="card-text">Concepts of programming using C++ / C# / Java for absolute
+                                    beginners</li>
+                                <li class="card-text">Data Structures and Algorithms using C++/C#/Java</li>
+                                <li class="card-text">Object Oriented Programming using C++/C#/Java</li>
+                                <li class="card-text">Design patterns using C++ / C# / Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 course-card">
+                        <div class="card-body">
+                            <h2 class="card-title">Java Stack</h2>
+                            <ul class="sub-courses">
+                                <li class="card-text">Web Java (Advance Java & Backend framework like Spring, Hibernate
+                                    etc.)</li>
+                                <li class="card-text">Full Stack Java with React JS & MySQL</li>
+                                <li class="card-text">Project development using Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 course-card">
+                        <div class="card-body">
+                            <h2 class="card-title">.Net Stack</h2>
+                            <ul class="sub-courses">
+                                <li class="card-text">Software Development using C#.Net, Winforms and SQL Server</li>
+                                <li class="card-text">Advance C#.Net (Multithreading, LINQ, Entity Framework, WCF, Web
+                                    API)</li>
+                                <li class="card-text">Advance Web API Development using ASP.Net</li>
+                                <li class="card-text">Full Stack development using .Net, React and MySQL</li>
+                                <li class="card-text">Project development using C#.Net</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 course-card">
+                        <div class="card-body">
+                            <h2 class="card-title">Data and Scripting</h2>
+                            <ul class="sub-courses">
+                                <li class="card-text">SQL/PLSQL Developer</li>
+                                <li class="card-text">Programming using Python</li>
+                                <li class="card-text">Unix Fundamentals & Shell Scripting</li>
+                                <li class="card-text">Apache Spark Java/Scala</li>
+                                <li class="card-text">Big Data SQL/HQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 course-card">
+                        <div class="card-body">
+                            <h2 class="card-title">Cloud, Docker and Kubernetes</h2>
+                            <ul class="sub-courses">
+                                <li class="card-text">Docker and Kubernetes examples using Java/C#.Net</li>
+                                <li class="card-text">Developing cloud solutions using Azure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- info section -->
+        <section class="info_section ">
+            <div class="container">
+                <h4>
+                    Get In Touch
+                </h4>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="info_items">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="">
+                                        <div class="item" id="address">
+                                            <div class="img-box ">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            </div>
+                                            <p>
+                                                Address: Parge Nagar, Kondhwa, Pune-411048
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="">
+                                        <div class="item" id="call">
+                                            <div class="img-box ">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </div>
+                                            <p>
+                                                +91 9561618368
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="">
+                                        <div class="item" id="mail_id">
+                                            <div class="img-box">
+                                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            </div>
+                                            <p>
+                                                Email : hr@codersdome.com, codersdome@gmail.com
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-box">
+                <h4>
+                    Follow Us
+                </h4>
+                <div class="box">
+                    <a href="https://www.facebook.com/codersdome" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://x.com/codersdome" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/codersdome" target="_blank">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/codersdome/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- end info_section -->
+
+        <!-- footer section -->
+        <footer class="footer_section">
+            <div class="container">
+                <p>
+                    &copy; <span id="displayDateYear"></span> All Rights Reserved By
+                    <a href="https://html.design/">CodesDome Pvt Ltd.</a>
+                    <br>
+                    -- Crafted With Passion &#128187;&#x2764;&#xFE0F; By-> Rishu Kumar Srivastava --
+                </p>
+            </div>
+        </footer>
+        <!-- footer section -->
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+        </script>
+        <script src="js/custom.js"></script>
+        <!-- Google Map -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEYcOpF8doUaqqaksgFw1W2Of-3YyK8bw&callback=myMap"></script> -->
+
+        <!-- End Google Map -->
+
+
+</body>
+
+</html>
